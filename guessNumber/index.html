@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="queries.css"/>
+    <title>Guess My Number!</title>
+</head>
+<body>
+<header>
+    <h1>Guess My Number!</h1>
+    <button class="between show-modal">(Between 1 and 20)</button>
+    <button class="btn again">Again!</button>
+    <div class="number">?</div>
+</header>
+<div class="modal hidden">
+    <button class="close">X</button>
+    <h2 class="modal-title">
+        You need to specify a number between 1 &mdash; 20
+    </h2>
+    <p class="modal-text">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur
+        unde provident pariatur, illo facilis, nemo veritatis eum et voluptatum
+        labore explicabo? Explicabo, adipisci reprehenderit. Cum totam molestias
+        impedit doloribus corporis.
+    </p>
+</div>
+<div class="overlay hidden"></div>
+<main>
+    <section class="left">
+        <input type="number" min="0" max="20" class="guess"/>
+        <button class="btn check">Check!</button>
+    </section>
+    <section class="right">
+        <p class="message">Start guessing...</p>
+        <p class="label-score">💯 Score: <span class="score">20</span></p>
+        <p class="label-highscore">
+            🥇 Highscore: <span class="highscore">0</span>
+        </p>
+    </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
